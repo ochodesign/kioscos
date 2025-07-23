@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kioscos 24hs: tu cadena de kioscos abiertos las 24 horas. Beneficios, ubicaciones, promociones y contacto.">
+    <meta name="keywords" content="kiosco, 24hs, abierto, promociones, sube, snacks, bebidas, Villa Lynch, Santos Lugares, Caseros">
+    <meta name="author" content="Kioscos 24hs">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1db954">
+    <meta name="language" content="Spanish">
+    <meta name="copyright" content="Kioscos 24hs">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kioscos 24hs | Siempre abiertos">
+    <meta property="og:description" content="Kioscos 24hs: tu cadena de kioscos abiertos las 24 horas. Beneficios, ubicaciones, promociones y contacto.">
+    <meta property="og:url" content="https://ochodesign.github.io/kioscos/">
+    <meta property="og:image" content="https://ochodesign.github.io/kioscos/imagenes/logo/logo-lpds.webp">
+    <meta property="og:image:alt" content="Logo Kioscos 24hs">
+    <meta property="og:site_name" content="Kioscos 24hs">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kioscos 24hs | Siempre abiertos">
+    <meta name="twitter:description" content="Kioscos 24hs: tu cadena de kioscos abiertos las 24 horas. Beneficios, ubicaciones, promociones y contacto.">
+    <meta name="twitter:image" content="https://ochodesign.github.io/kioscos/imagenes/logo/logo-lpds.webp">
+    <meta name="twitter:image:alt" content="Logo Kioscos 24hs">
+
+    <!-- Favicon y Apple Touch Icon -->
+    <link rel="icon" href="imagenes/logo/logolpdsfavicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagenes/logo/logolpdsfavicon.png">
+    <link rel="shortcut icon" href="imagenes/logo/logolpdsfavicon.png" type="image/png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ochodesign.github.io/kioscos/">
+
+    <!-- CSS crítico inline para renderizar above the fold más rápido -->
+    <style>
+      body {margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:#181818;color:#fff;}
+      .header-compact{background:#181818;box-shadow:0 2px 8px rgba(0,0,0,0.08);padding:0.7em 0.5em;}
+      .logo-large{height:54px;width:auto;}
+      .main-nav .nav-list{display:flex;gap:1.2em;list-style:none;margin:0;padding:0;}
+      .main-nav .nav-list li a{color:#ffe600;text-decoration:none;font-weight:600;}
+      .main-nav .nav-list li a:hover{text-decoration:underline;}
+      .hero{min-height:45vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+      .hero-title{font-size:2.1rem;text-align:center;line-height:1.1;}
+      .hero-title-yellow{color:#ffe600;}
+      .btn-cta{background:#1db954;color:#fff;padding:0.7em 1.5em;border-radius:24px;text-decoration:none;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.10);transition:background 0.2s;}
+      .btn-cta:hover{background:#159c43;}
+      .galeria-masonry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.1rem;}
+      .galeria-masonry-item img{width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);}
+      .galeria-label{display:block;text-align:center;margin-top:0.4em;color:#ffe600;font-weight:600;}
+      /* ...otros estilos críticos... */
+    </style>
+    <!-- Precarga de fuentes personalizadas -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400;700&display=swap"></noscript>
+    <!-- Font Awesome diferido -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></noscript>
+    <!-- CSS no crítico diferido -->
+    <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+
+    <!-- Estructurados JSON-LD (SEO Local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Kioscos 24hs",
+      "image": "https://ochodesign.github.io/kioscos/imagenes/logo/logo-lpds.webp",
+      "description": "Cadena de kioscos abiertos las 24 horas en Buenos Aires.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Rodríguez Peña 4706",
+        "addressLocality": "Villa Lynch",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "telephone": "+54-800-123-4567",
+      "url": "https://ochodesign.github.io/kioscos/"
+    }
+    </script>
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="TU_CODIGO_DE_VERIFICACION_AQUI" />
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <title>Kioscos 24hs | Siempre abiertos</title>
+    <style>
+      .material-symbols-rounded {
+        font-family: 'Material Symbols Rounded';
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        font-size: 2.2rem;
+        color: #ffe600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 0.5em auto;
+        background: #1db954;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        text-align: center;
+      }
+      .beneficio-icono {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      /* --- MENÚ RESPONSIVE --- */
+      @media (max-width: 900px) {
+        .main-nav .nav-list {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100vw;
+          background: #1db954;
+          flex-direction: column;
+          gap: 0;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+          border-radius: 0 0 18px 18px;
+          z-index: 100;
+          padding: 1.2em 0 1.2em 0;
+        }
+        .main-nav .nav-list.show {
+          display: flex;
+        }
+        .main-nav .nav-list li {
+          text-align: center;
+          margin: 0.2em 0;
+        }
+        .main-nav .nav-list li a {
+          color: #fff;
+          font-size: 1.18em;
+          padding: 0.7em 0;
+          display: block;
+        }
+        .burger {
+          display: block;
+        }
+      }
+      @media (min-width: 901px) {
+        .main-nav .nav-list {
+          display: flex !important;
+          position: static;
+          background: none;
+          flex-direction: row;
+          gap: 1.2em;
+          box-shadow: none;
+          border-radius: 0;
+          padding: 0;
+        }
+        .burger {
+          display: none;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header class="header-compact">
+        <div class="logo-nav header-logo-nav">
+            <img src="imagenes/logo/logo-lpds.webp" alt="Logo Kioscos 24hs" class="logo logo-large" id="inicio" />
+            <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </button>
+            <nav class="main-nav">
+                <ul id="main-menu" class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#kioscos">Nuestros Kioscos</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" style="position:relative;overflow:hidden;" id="inicio">
+            <picture>
+                <source srcset="imagenes/hero/bg-hero-dk.webp" media="(min-width:700px)" type="image/webp">
+                <img src="imagenes/hero/bg-hero-mb.webp" alt="Kiosco 24hs" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;" loading="eager" fetchpriority="high" width="700" height="350" />
+            </picture>
+            <div class="hero-overlay" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(0,0,0,0.45);z-index:1;"></div>
+            <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:45vh;">
+                <div class="hero-content-bg">
+                  <h1 class="hero-title seo-fadein"><span class="hero-title-yellow">Kioscos 24hs</span> en Buenos Aires  | Abiertos 24/7 <i class="fa-solid fa-clock fa-spin" style="color: #ffe600;"></i></h1>
+                  <p class="hero-desc seo-fadein" style="animation-delay:0.15s;">Cadena de kioscos abiertos las 24 horas en Villa Lynch, Santos Lugares y Caseros. Snacks, bebidas, recargas, promos y atención personalizada todos los días. ¡Encontrá tu kiosco más cercano!</p>
+                  <a href="#kioscos" class="btn-cta hero-cta seo-fadein" style="animation-delay:0.3s;">Ver sucursales 24hs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de productos más vendidos -->
+        <section class="galeria-productos galeria-fullwidth galeria-masonry" id="mas-vendidos">
+            <h2 class="galeria-titulo" style="margin-bottom: 0.5rem; font-size: 1.6rem;">Favoritos de nuestros clientes</h2>
+            <p style="text-align:center; color:#444; font-size:1.02rem; margin-bottom:1.1rem; padding: 12px;">Descubrí los productos más elegidos y populares en todos nuestros kioscos 24hs.</p>
+            <div class="galeria-masonry-grid" style="gap: 1.1rem;">
+                <div class="galeria-masonry-item galeria-masonry-item--large">
+                    <img src="imagenes/galeria/cocaylays1.webp" alt="Coca-Cola 500ml" loading="lazy" width="320" height="320" />
+                    <span class="galeria-label">El mejor combo</span>
+                </div>
+                <div class="galeria-masonry-item">
+                    <img src="imagenes/galeria/chocotorta-milka.webp" alt="Alfajor Capitán del Espacio" loading="lazy" width="180" height="180" />
+                    <span class="galeria-label">Alfajores y Chocolates</span>
+                </div>
+                <div class="galeria-masonry-item">
+                    <img src="imagenes/galeria/sugusmielcitas.webp" alt="Papas Lays Clásicas" loading="lazy" width="180" height="180" />
+                    <span class="galeria-label">Muchas Golosinas</span>
+                </div>
+                <div class="galeria-masonry-item galeria-masonry-item--tall">
+                    <img src="imagenes/galeria/donsatur-playadito.webp" alt="Yerba y Galletitas" loading="lazy" style="z-index:1; position:relative;" width="180" height="260" />
+                    <span class="galeria-label">Lo mejor para tu desayuno</span>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="kioscos" class="kioscos">
+            <h2>Nuestros Kioscos</h2>
+            <p class="kioscos-seo-desc">Encontrá tu kiosco 24 horas más cercano en Villa Lynch, Santos Lugares y Caseros. Todos nuestros locales ofrecen atención personalizada, recargas, snacks, bebidas y mucho más, siempre abiertos para vos.</p>
+            <style>
+              .kioscos-seo-desc {
+                text-align: center;
+                max-width: 540px;
+                font-size: 1.1rem;
+                margin: 0 auto 1.2em auto;
+                color: #444;
+              }
+            </style>
+            <div class="kiosco-lista">
+                <article class="kiosco card-kiosco">
+                    <div class="kiosco-img-wrap">
+                        <img src="imagenes/kioscos/rodriguezpeña.webp" alt="La Parada del Sol 1" class="kiosco-img" loading="lazy" />
+                    </div>
+                    <div class="kiosco-info">
+                        <h3 class="kiosco-titulo">La Parada del Sol 1</h3>
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:0.2em;margin-bottom:0.5em;">
+                          <span class="kiosco-direccion">Av. Rodríguez Peña 4706, Villa Lynch</span>
+                          <span class="kiosco-subtitulo">En el corazón de Villa Lynch</span>
+                        </div>
+                        <div class="kiosco-mapa" style="margin-bottom:0.5em;">
+                            <iframe src="https://www.google.com/maps?q=Av.+Rodríguez+Peña+4706,+San+Martín,+Buenos+Aires,+Argentina&output=embed" title="Mapa La Parada del Sol 1" loading="lazy"></iframe>
+                        </div>
+                        <div class="kiosco-estacion">
+                          <span class="material-symbols-rounded">train</span>
+                          <span class="kiosco-estacion-text">Cerca de estación <b>Fernández Moreno</b></span>
+                        </div>
+                        <div class="kiosco-colectivos-row">
+                          <span class="kiosco-colectivos-label">Colectivos:</span>
+                          <span class="colectivo-badge" data-colectivo="123">123</span>
+                          <span class="colectivo-badge" data-colectivo="237">237</span>
+                        </div>
+                        <a class="btn-maps" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Rodríguez+Peña+4706,+San+Martín" target="_blank" rel="noopener" style="margin-top:0.7em;">
+                            <i class="fa-solid fa-location-arrow"></i> Cómo llegar
+                        </a>
+                    </div>
+                </article>
+                <article class="kiosco card-kiosco">
+                    <div class="kiosco-img-wrap">
+                        <img src="imagenes/kioscos/bonifacini.webp" alt="La Parada del Sol 2" class="kiosco-img" loading="lazy" />
+                    </div>
+                    <div class="kiosco-info">
+                        <h3 class="kiosco-titulo">La Parada del Sol 2</h3>
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:0.2em;margin-bottom:0.5em;">
+                          <span class="kiosco-direccion">Santiago Bonifacini 3795, Santos Lugares</span>
+                          <span class="kiosco-subtitulo">A una cuadra de Rodriguez Peña</span>
+                        </div>
+                        <div class="kiosco-mapa" style="margin-bottom:0.5em;">
+                            <iframe src="https://www.google.com/maps?q=Santiago+Bonifacini+3795,+Santos+Lugares,+Buenos+Aires,+Argentina&output=embed" title="Mapa La Parada del Sol 2" loading="lazy"></iframe>
+                        </div>
+                        <div class="kiosco-estacion">
+                          <span class="material-symbols-rounded">location_on</span>
+                          <span class="kiosco-estacion-text">Cerca de<span aria-label="iglesia" title="Iglesia" style="font-size:1.15em;">⛪</span> <b>Iglesia de Lourdes</b></span>
+                        </div>
+                        <div class="kiosco-colectivos-row">
+                          <span class="kiosco-colectivos-label">Colectivos:</span>
+                          <span class="colectivo-badge" data-colectivo="123">123</span>
+                          <span class="colectivo-badge" data-colectivo="343">343</span>                          <span class="colectivo-badge" data-colectivo="105">105</span>
+                          <span class="colectivo-badge" data-colectivo="161">161</span>
+                        </div>
+                        <a class="btn-maps" href="https://www.google.com/maps/dir/?api=1&destination=Santiago+Bonifacini+3795,+Santos+Lugares" target="_blank" rel="noopener" style="margin-top:0.7em;">
+                            <i class="fa-solid fa-location-arrow"></i> Cómo llegar
+                        </a>
+                    </div>
+                </article>
+                <article class="kiosco card-kiosco">
+                    <div class="kiosco-img-wrap">
+                        <img src="imagenes/kioscos/sabattini.webp" alt="La Parada del Sol 3" class="kiosco-img" loading="lazy" />
+                    </div>
+                    <div class="kiosco-info">
+                        <h3 class="kiosco-titulo">La Parada del Sol 3</h3>
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:0.2em;margin-bottom:0.5em;">
+                          <span class="kiosco-direccion">Dr. Amadeo Sabattini 4251, Santos Lugares</span>
+                          <span class="kiosco-subtitulo">Entre Caseros y Santos Lugares</span>
+                        </div>
+                        <div class="kiosco-mapa" style="margin-bottom:0.5em;">
+                            <iframe src="https://www.google.com/maps?q=Dr.+Amadeo+Sabattini+4251,+Buenos+Aires,+Argentina&output=embed" title="Mapa La Parada del Sol 3" loading="lazy"></iframe>
+                        </div>
+                        <div class="kiosco-estacion">
+                          <span class="material-symbols-rounded">location_on</span>
+                          <span class="kiosco-estacion-text"><b>A 2 cuadras de Plaza Giorello</b></span>
+                        </div>
+                        <div class="kiosco-colectivos-row">
+                          <span class="kiosco-colectivos-label">Colectivos:</span>
+                          <span class="colectivo-badge" data-colectivo="343">343</span>
+                          <span class="colectivo-badge" data-colectivo="123">123</span>
+                        </div>
+                        <a class="btn-maps" href="https://www.google.com/maps/dir/?api=1&destination=Dr.+Amadeo+Sabattini+4251" target="_blank" rel="noopener" style="margin-top:0.7em;">
+                            <i class="fa-solid fa-location-arrow"></i> Cómo llegar
+                        </a>
+                    </div>
+                </article>
+                <article class="kiosco card-kiosco">
+                    <div class="kiosco-img-wrap">
+                        <img src="imagenes/kioscos/avsanmartin.webp" alt="Despen24" class="kiosco-img" loading="lazy" />
+                    </div>
+                    <div class="kiosco-info">
+                        <h3 class="kiosco-titulo">Despen24</h3>
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:0.2em;margin-bottom:0.5em;">
+                          <span class="kiosco-direccion">Av. San Martín 1234, Caseros</span>
+                          <span class="kiosco-subtitulo">Caseros Centro</span>
+                        </div>
+                        <div class="kiosco-mapa" style="margin-bottom:0.5em;">
+                            <iframe src="https://www.google.com/maps?q=Av.+San+Martín+1234,+Caseros,+Buenos+Aires,+Argentina&output=embed" title="Mapa Despen24" loading="lazy"></iframe>
+                        </div>
+                        <div class="kiosco-estacion">
+                          <span class="material-symbols-rounded">train</span>
+                          <span class="kiosco-estacion-text">Cerca de la estación <b>Tropezón</b></span>
+                        </div>
+                        <div class="kiosco-colectivos-row">
+                          <span class="kiosco-colectivos-label">Colectivos:</span>
+                          <span class="colectivo-badge" data-colectivo="343">343</span>
+                        </div>
+                        <a class="btn-maps" href="https://www.google.com/maps/dir/?api=1&destination=Av.+San+Martín+1234,+Caseros" target="_blank" rel="noopener" style="margin-top:0.7em;">
+                            <i class="fa-solid fa-location-arrow"></i> Cómo llegar
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+         <!-- Slider de marcas -->
+        <section class="marcas-section">
+            <h2 class="marcas-title">Marcas que usamos y confiamos</h2>
+            <div class="marcas-slider">
+                <div class="marcas-track">
+                  <div>
+                    <img src="imagenes/marcas/logodecocacola.webp" alt="Coca-Cola" class="marca-logo" loading="lazy">
+                    </div>
+                    <div>
+                    <img src="imagenes/marcas/logodearcor.webp" alt="Arcor" class="marca-logo" loading="lazy">
+                    </div>
+                    <div>
+                    <img src="imagenes/marcas/logodemondelez.webp" alt="Mondelez" class="marca-logo" loading="lazy">
+                    </div>
+                    <div>
+                    <img src="imagenes/marcas/logodepepsico.webp" alt="Pepsico" class="marca-logo" loading="lazy">
+                    </div>
+                    <div>
+                    <img src="imagenes/marcas/logodequilmes.webp" alt="Quilmes" class="marca-logo" loading="lazy">
+                    </div>
+                    <div>
+                    
+                    <img src="imagenes/marcas/la_serenisima.webp" alt="La Serenisima" class="marca-logo" loading="lazy">
+                    </div>
+                    <div>
+                    <img src="imagenes/marcas/logodecocacola.webp" alt="Coca-Cola" class="marca-logo" loading="lazy" width="90" height="40">
+                    </div>
+                    <div>
+                    <img src="imagenes/marcas/logodearcor.webp" alt="Arcor" class="marca-logo" loading="lazy" width="90" height="40">
+                  </div>
+                    <div>
+                    <img src="imagenes/marcas/logodemondelez.webp" alt="Mondelez" class="marca-logo" loading="lazy" width="90" height="40">
+                  </div>
+                    <div>
+                    <img src="imagenes/marcas/logodepepsico.webp" alt="Pepsico" class="marca-logo" loading="lazy" width="90" height="40">
+                  </div>
+                    <div>
+                    <img src="imagenes/marcas/logodequilmes.webp" alt="Quilmes" class="marca-logo" loading="lazy" width="90" height="40">
+                  </div>
+                    <div>
+                    <img src="imagenes/marcas/la_serenisima.webp" alt="La Serenisima" class="marca-logo" loading="lazy" width="90" height="40">
+                  </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="beneficios" class="beneficios beneficios-modernas">
+            <h2 class="beneficios-titulo">¿Por qué elegirnos?</h2>
+            <div class="beneficios-lista">
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">schedule</span></div>
+                    <h3>24hs, todo el año</h3>
+                    <p>Siempre abiertos, incluso feriados y domingos. ¡Nunca te dejamos a pata!</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">credit_card</span></div>
+                    <h3>Todos los medios de pago</h3>
+                    <p>Aceptamos efectivo, débito, crédito, QR, billeteras virtuales y más.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">child_care</span></div>
+                    <h3>Pañales y urgencias</h3>
+                    <p>Pañales, higiene y básicos a cualquier hora. ¡Salvamos tu noche!</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">directions_bus</span></div>
+                    <h3>Carga SUBE y recargas</h3>
+                    <p>Recargá tu SUBE o tu celular en el momento.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">sell</span></div>
+                    <h3>Promos y Comidas</h3>
+                    <p>Promociones de super panchos, hamburguesas y más.</p>
+                </div>
+                <div class="beneficios-lista">
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">lunch_dining</span></div>
+                    <h3>Snacks y bebidas</h3>
+                    <p>Todo para el antojo: golosinas, snacks, bebidas frías y más.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">cleaning_services</span></div>
+                    <h3>Artículos de limpieza</h3>
+                    <p>Detergente, lavandina, esponjas y más para tu casa o urgencias.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">soap</span></div>
+                    <h3>Artículos de higiene</h3>
+                    <p>Jabón, shampoo, desodorante, papel y todo lo esencial.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">event</span></div>
+                    <h3>Especiales de calendario</h3>
+                    <p>Armamos combos y productos temáticos para fechas como Día de la Madre, Día del Niño, Halloween, Navidad y más.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icono"><span class="material-symbols-rounded">shopping_bag</span></div>
+                    <h3>Artículos de almacén</h3>
+                    <p>Yerba, azúcar, fideos, galletitas y productos de almacén.</p>
+                </div>
+            </div>
+            <p class="beneficios-desc">En Kioscos 24hs pensamos en vos: resolvé tus urgencias, hacé tus compras cotidianas y encontrá lo que necesitás, cuando lo necesitás. <br> <b>¡Siempre cerca, siempre abiertos!</b></p>
+        </section>
+        <!-- Sección de promociones eliminada por solicitud del usuario -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <p class="contacto-desc">¿Tenés consultas, sos proveedor o querés trabajar con nosotros? Escribinos y te responderemos a la brevedad.</p>
+            <form action="contacto.php" method="POST" autocomplete="on" class="form-contacto-moderna">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre"><i class="fa-solid fa-user"></i> Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9\s\-()+]{8,}" placeholder="Ej: 11 2345-6789" />
+                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="motivo">Motivo</label>
+                    <select id="motivo" name="motivo" required>
+                      <option value="" disabled selected>Seleccioná una opción</option>
+                      <option value="proveedor">Soy proveedor</option>
+                      <option value="trabajar">Quiero trabajar</option>
+                      <option value="consulta">Consulta general</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje"><i class="fa-solid fa-comment-dots"></i> Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-moderno">
+      <style>
+        .footer-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2.5rem 1.5rem;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+        }
+        .footer-col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .footer-logo {
+          width: 90px;
+          margin-bottom: 0.7em;
+        }
+        .footer-desc {
+          color: #eee;
+          font-size: 1.05em;
+          margin-bottom: 0;
+        }
+        .footer-menu ul, .footer-contacto ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .footer-menu li, .footer-contacto li {
+          margin-bottom: 0.5em;
+        }
+        .footer-menu a, .footer-contacto a {
+          color: #ffe600;
+          text-decoration: none;
+        }
+        .footer-menu a:hover, .footer-contacto a:hover {
+          text-decoration: underline;
+        }
+        .footer-menu h4, .footer-contacto h4, .footer-ubicaciones h4 {
+          color: #ffe600;
+          margin-bottom: 0.7em;
+          font-size: 1.13em;
+        }
+        .footer-ubicaciones-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.1em 2em;
+          width: 100%;
+          justify-items: center;
+        }
+        .footer-ubi-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.7em;
+          margin-bottom: 0.7em;
+          text-align: left;
+        }
+        .footer-ubi-icon {
+          color: #ffe600;
+          font-size: 1.3em;
+          margin-top: 0.2em;
+        }
+        .footer-ubi-info b {
+          color: #ffe600;
+          font-size: 1.05em;
+        }
+        .footer-ubi-direccion {
+          display: block;
+          color: #fff;
+          font-size: 0.98em;
+          margin-bottom: 0.1em;
+        }
+        .footer-maps-link {
+          color: #1db954;
+          font-size: 0.98em;
+          text-decoration: underline;
+        }
+        .footer-maps-link:hover {
+          color: #ffe600;
+        }
+        .footer-legal {
+          text-align: center;
+          padding: 1.2em 0 0.5em 0;
+          color: #aaa;
+          font-size: 0.98em;
+          border-top: 1px solid #222;
+          margin-top: 1.5em;
+        }
+        .footer-legal a {
+          color: #1db954;
+          text-decoration: underline;
+          font-size: 0.98em;
+        }
+        @media (max-width: 900px) {
+          .footer-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        @media (max-width: 600px) {
+          .footer-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem 0;
+            padding: 2.2rem 0.5rem 1.2rem 0.5rem;
+            width: 100%;
+            align-items: center;
+          }
+          .footer-col {
+            width: 100%;
+            max-width: 370px;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+          }
+          .footer-ubicaciones-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1em;
+            width: 100%;
+            align-items: center;
+          }
+          .footer-ubi-item {
+            width: 100%;
+            max-width: 340px;
+            margin: 0 auto 0.7em auto;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3em;
+          }
+          .footer-ubi-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+          }
+          .footer-maps-link {
+            display: inline-block;
+            margin: 0.2em auto 0 auto;
+            text-align: center;
+          }
+          .footer-ubi-icon {
+            margin-bottom: 0.2em;
+          }
+        }
+      </style>
+      <div class="footer-grid">
+        <div class="footer-col footer-logo-desc">
+          <img src="imagenes/logo/logo-lpds.webp" alt="Logo Kioscos 24hs" class="footer-logo" />
+          <p class="footer-desc">Kioscos 24hs: abiertos siempre, cerca tuyo. Snacks, bebidas, recargas, promos y más.</p>
+        </div>
+        <div class="footer-col footer-menu">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="#kioscos">Nuestros Kioscos</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#" onclick="abrirModalPrivacidad();return false;">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contacto">
+          <h4>Contacto</h4>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@kioscos24hs.com">info@kioscos24hs.com</a></li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:08001234567">0800-123-4567</a></li>
+            <li class="footer-redes">
+              <a href="https://www.instagram.com/kioscodelsol.24/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col footer-ubicaciones">
+          <h4>Ubicaciones</h4>
+          <div class="footer-ubicaciones-grid">
+            <div class="footer-ubi-item">
+              <span class="footer-ubi-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div class="footer-ubi-info">
+                <b>La Parada del Sol 1</b>
+                <span class="footer-ubi-direccion">Av. Rodríguez Peña 4706, Villa Lynch</span>
+                <a class="footer-maps-link" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Rodríguez+Peña+4706,+San+Martín" target="_blank" rel="noopener">ir ahora</a>
+              </div>
+            </div>
+            <div class="footer-ubi-item">
+              <span class="footer-ubi-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div class="footer-ubi-info">
+                <b>La Parada del Sol 2</b>
+                <span class="footer-ubi-direccion">Santiago Bonifacini 3795, Santos Lugares</span>
+                <a class="footer-maps-link" href="https://www.google.com/maps/dir/?api=1&destination=Santiago+Bonifacini+3795,+Santos+Lugares" target="_blank" rel="noopener">ir ahora</a>
+              </div>
+            </div>
+            <div class="footer-ubi-item">
+              <span class="footer-ubi-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div class="footer-ubi-info">
+                <b>La Parada del Sol 3</b>
+                <span class="footer-ubi-direccion">Dr. Amadeo Sabattini 4251, Santos Lugares</span>
+                <a class="footer-maps-link" href="https://www.google.com/maps/dir/?api=1&destination=Dr.+Amadeo+Sabattini+4251" target="_blank" rel="noopener">ir ahora</a>
+              </div>
+            </div>
+            <div class="footer-ubi-item">
+              <span class="footer-ubi-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div class="footer-ubi-info">
+                <b>Despen24</b>
+                <span class="footer-ubi-direccion">Av. San Martín 1234, Caseros</span>
+                <a class="footer-maps-link" href="https://www.google.com/maps/dir/?api=1&destination=Av.+San+Martín+1234,+Caseros" target="_blank" rel="noopener">ir ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>&copy; 2025 Kioscos 24hs. Todos los derechos reservados.</span>
+        <br>
+        <a href="#" onclick="abrirModalPrivacidad();return false;">Política de Privacidad</a>
+      </div>
+    </footer>
+<!-- Modal Política y Privacidad -->
+<div class="modal-privacidad-bg" id="modalPrivacidadBg" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="modalPrivacidadTitulo" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.55);">
+  <div class="modal-privacidad" role="document" style="background:#fff;padding:2em 1.5em;max-width:420px;margin:8vh auto;border-radius:12px;box-shadow:0 4px 32px rgba(0,0,0,0.18);position:relative;">
+    <button class="btn-cerrar-modal" id="cerrarModalPrivacidad" aria-label="Cerrar" style="position:absolute;top:1em;right:1em;font-size:1.7em;background:none;border:none;cursor:pointer;">&times;</button>
+    <h2 id="modalPrivacidadTitulo" style="margin-top:0;">Política de Privacidad</h2>
+    <p>Tu privacidad es importante para nosotros. En Kioscos 24hs, solo recopilamos la información necesaria para brindarte el mejor servicio. No compartimos tus datos con terceros sin tu consentimiento. Puedes contactarnos para ejercer tus derechos de acceso, rectificación o eliminación de tus datos.</p>
+    <p>Para más información, contáctanos a través del formulario de contacto.</p>
+    <button class="btn-aceptar-modal" id="aceptarModalPrivacidad" style="margin-top:1.5em;padding:0.6em 1.5em;background:#1db954;color:#fff;border:none;border-radius:6px;font-size:1.1em;cursor:pointer;">Aceptar</button>
+  </div>
+</div>
+    
+    <script src="js/scripts.js" defer></script>
+    <script>
+    // Modal Política y Privacidad
+    function abrirModalPrivacidad() {
+      document.getElementById('modalPrivacidadBg').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+    function cerrarModalPrivacidad() {
+      document.getElementById('modalPrivacidadBg').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    document.getElementById('cerrarModalPrivacidad').onclick = cerrarModalPrivacidad;
+    document.getElementById('aceptarModalPrivacidad').onclick = cerrarModalPrivacidad;
+    // Opcional: cerrar con fondo
+    document.getElementById('modalPrivacidadBg').onclick = function(e) {
+      if (e.target === this) cerrarModalPrivacidad();
+    };
+
+    // --- MENÚ BURGER RESPONSIVE ---
+    document.addEventListener('DOMContentLoaded', function() {
+      var burger = document.getElementById('burger');
+      var navList = document.getElementById('main-menu');
+      burger.addEventListener('click', function() {
+        var expanded = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', !expanded);
+        navList.classList.toggle('show');
+      });
+      // Cerrar menú al hacer click en un enlace (opcional)
+      navList.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if(window.innerWidth <= 900){
+            navList.classList.remove('show');
+            burger.setAttribute('aria-expanded', false);
+          }
+        });
+      });
+      // Cerrar menú si se redimensiona a desktop
+      window.addEventListener('resize', function() {
+        if(window.innerWidth > 900){
+          navList.classList.remove('show');
+          burger.setAttribute('aria-expanded', false);
+        }
+      });
+    });
+    </script>
+</body>
+<!-- Botón scroll up -->
+<script src="js/scrollup.js" defer></script>
+</html>
