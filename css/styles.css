@@ -1039,7 +1039,7 @@ nav ul {
   transform: scaleX(0.7);
 }
 .burger.open .burger-bar:nth-child(3) {
-  transform: translateY(-15px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .main-nav {
